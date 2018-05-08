@@ -1,21 +1,247 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ranjith Solthi</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>Ranjith Solthi </title>
 </head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="icon" type="image/png" href="logo.png" />
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+        $("a").click(function(){
+			var k = $(this).attr('href');
+			//alert(k);
+
+			if(k.match("#about"))
+			{
+				$('html, body').animate({
+      			  scrollTop: $("#about").offset().top
+    			}, 2000);	
+			}
+			else if(k.match("#contactus"))
+			{
+				$('html, body').animate({
+      			  scrollTop: $("#contactus").offset().top
+    			}, 2000);
+			}
+			else if(k.match("#services"))
+			{
+				$('html, body').animate({
+      			  scrollTop: $("#socialMedia").offset().top
+    		}, 2000);
+			}
+			else
+			{
+				$('html, body').animate({
+      			  scrollTop: $("#").offset().top
+    		}, 2000);
+			}
+			
+		});
+	});
+</script>
+<style type="text/css">
+body{
+	overflow-x: hidden;
+
+}
+
+	p{
+		text-align: justify;
+		text-indent: 50px;
+	}
+	h3{
+		background-color: #ccc;
+		color: black;
+		padding: 5px;
+	}
+	 a{
+		color: #ccc;
+	}
+</style>
 <body>
-	<div class="alert alert-danger">
+<nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#aboutus">About me</a></li>
+      <li><a href="#services">Technical skills </a></li> 
+      <li><a href="#contactus">Contact us</a></li> 
+    </ul>
+  </div>
+</nav>
+
+<div class="clear" style="margin-top:-20px;">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+   
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+   
+
+    <div class="item active">
+      <!--<img src="https://careers.tableau.com/desktop/video/footer.jpg" alt="Flower"  height="250">-->
+      <img src="main-qimg-1b35ea9a2e2f5b0e5cf4b0e02e96bb8b-c.jpg" width="100%">
+    </div>
+
+ 
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="row">
+	<h2 align="center">Ranjith Solthi</h2>
+	<div class="col-lg-12">
 		
 	</div>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+
+</div>
+</div>
+<div class="row" id="about"> 
+
+	<div class="row" style="background:#ccc;padding:5%;">
+		<div class="col-lg-5">
+			<img height="250px" width="350px" src="http://www.over40datingsites.com/wp-content/uploads/2015/04/About-Phrase-29458421.jpg" class="img-circle">
+		</div>
+		<div class="col-lg-7">
+			<p>
+				I'm Ranjith
+			</p>
+		</div>
+	
+	</div>
+</div>
+<div class="row" id="services"> 
+
+	<div class="row" style="background:white;padding:5%;">
+		<div class="col-lg-7">
+			<h4>Roles & Responsibilities </h4>
+			<p>
+				<ul>
+					<li>WHO</li>
+				</ul>
+			</p>
+
+
+		</div>
+		<div class="col-lg-5">
+			<p>
+				<img width="350px" src="http://5stardispatch.com/wp-content/uploads/2015/11/services.png" class="img-circle">
+			</p>
+		</div>
+	
+	</div>
+</div>
+<div class="row" id="contactus"> 
+
+	<div class="row" style="background:#95B9C7;padding:5%;">
+		<div class="col-lg-3">
+		<br>
+			<h4>Address</h4>
+				<span>
+					HNO 8-86,<br>
+					Srinivas nagar,<br>
+					Hyderabad Dist,<br>
+					Telangana-500 054<br>
+					Mobile:+91-7416111101<br>
+					Email:<a href="mailto:ranjith.solthi@gmail.com" style="color:black;">ranjith.solthi@gmail.com</a>
+
+				</span><br><br>
+				<img src="logo.png" class="img-thumbnail" width="200">
+			
+			
+
+		</div>
+		<div class="col-lg-6">
+			<br>
+				
+			
+
+
+		</div>
+		<div class="col-lg-3" >
+			<h2></h2>
+			
+		</div>
+	
+	</div>
+</div>
+	<div class="row"><br>
+		<div class="container" align="center">
+			<h2>Social connect</h2>
+			<a href="mailto:ranjith.solthi@gmail.com"><img src="email-icon.png" width="65px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.facebook.com/rispvt/"><img width="65px" src="fb-icon.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.twitter.com/ranjithis/"><img width="65px" src="twitter-icon.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+
+			
+			<br>
+
+			
+		</div>
+	</div><br>
+	<div class="row" style="background:#151516;padding:5%;color:#ccc" id="footer">
+		<div class="container" align="center">
+			<div class="col-lg-1">
+				
+			</div>
+			<div class="col-lg-3" align="center" style="border-right:1px solid rgb(75, 80, 81);" >
+				
+				<a href="#aboutus">About us</a> <br>
+				<a href="#contactus">Contact us</a><br>
+				<a href="#services">Services</a><br>
+			</div>
+			<div class="col-lg-3" align="center" style="border-right:1px solid rgb(75, 80, 81);">
+				<a href="#">Terms and conditions</a><br>
+				<a href="#">Privacy & Policy </a><br>
+				<a href="#">Cookies & Policy </a><br>
+			</div>
+			<div class="col-lg-5" align="center" >
+				<h4><u>Social connect</u></h4>	
+			<a href="mailto:ranjith.solthi@gmail.com"><img src="email-icon.png" width="35px"></a>&nbsp;&nbsp;&nbsp;
+			<a href="https://www.facebook.com/ritspvt"><img width="35px" src="fb-icon.png"></a>&nbsp;&nbsp;&nbsp;
+			<a href="#"><img width="35px" src="twitter-icon.png"></a>&nbsp;&nbsp;&nbsp;
+			<a href="#"><img width="35px" src="phone-icon.png"></a>&nbsp;&nbsp;&nbsp;
+			<a href="#"><img width="35px" src="youtube.png"></a>&nbsp;&nbsp;&nbsp;
+			<a href="#"><img width="35px" src="google-plus.png"></a>&nbsp;&nbsp;&nbsp;
+
+			
+			
+
+			</div>
+			
+			
+		</div>
+		<div class=" container col-lg-12" align="center"><br>
+			<h5 align="center">Copyright &copy; 2014-2016 All rights reserved Omkar PG and developed & maintained by <a href="http://satyagroupofindustries.com/" style="color:#FF8C00;">Satya group of industries</a></h5>	
+			</div>
+	
+	
+	</div>
+
 </body>
 </html>
